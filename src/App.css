@@ -1,0 +1,183 @@
+.page {
+  margin: 0 auto;
+  max-width: 1420px;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.header h1 {
+  font-size: 1.45rem;
+  margin: 0;
+}
+
+.layout {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.panel {
+  width: 360px;
+  background: #f8fafc;
+  border: 1px solid #d7dfea;
+  border-radius: 10px;
+  padding: 12px;
+  max-height: calc(100vh - 90px);
+  overflow: auto;
+}
+
+.panel h2,
+.panel h3 {
+  margin: 4px 0 8px;
+}
+
+.workspace {
+  flex: 1;
+  min-width: 0;
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.fieldRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.fieldRow label {
+  font-size: 0.85rem;
+  color: #334155;
+}
+
+.fieldRow input,
+.fieldRow select,
+.fieldRow textarea,
+.fieldRow button {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding: 7px 9px;
+}
+
+.fieldRow textarea {
+  resize: vertical;
+}
+
+.checkboxRow {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inline {
+  display: flex;
+  gap: 8px;
+}
+
+.inline input {
+  flex: 1;
+}
+
+.inline button,
+.eventsHeader button {
+  background: #e2e8f0;
+  cursor: pointer;
+}
+
+.meta {
+  color: #334155;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0 0 10px;
+}
+
+.meta p {
+  margin: 0;
+  background: #f8fafc;
+  border: 1px solid #dce4ef;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 0.84rem;
+}
+
+.mapShell {
+  background: #f7f8fb;
+  border: 1px solid #d9dce3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.eventsPanel {
+  margin-top: 10px;
+  border: 1px solid #d9e1ec;
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 250px;
+  overflow: auto;
+}
+
+.eventsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.eventsHeader h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.eventsPanel ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.event {
+  margin-bottom: 4px;
+  font-size: 0.84rem;
+}
+
+.event.hover {
+  color: #1d4ed8;
+}
+
+.event.click {
+  color: #0369a1;
+}
+
+.event.selection {
+  color: #047857;
+}
+
+.empty {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .panel {
+    width: auto;
+    max-height: none;
+  }
+
+  .meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
