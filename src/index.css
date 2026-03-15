@@ -1,12 +1,11 @@
 body {
-  background: #ffffff;
+  background: #eff5fc;
   color: #111827;
   font-family:
-    Inter,
+    Roboto,
     system-ui,
     -apple-system,
     Segoe UI,
-    Roboto,
     sans-serif;
   line-height: 1.5;
   margin: 0;

@@ -1,31 +1,35 @@
 # Nepal Map Playground
 
-This is a standalone React app for testing `nepal-map-component` against real data.
+Interactive sandbox for `nepal-map-component`. Use it here.
 
-## Setup
+See [Nepal Map Component](https://github.com/bidwat/nepal-map-component) for more details about the component.
 
-```bash
-cd nepal-map-playground
-npm install
-```
+## What Is In The Playground
 
-The playground expects this file in `public/`:
+This app has two pages:
 
-- `public/nepal-map.topojson`
+- `Getting Started`: guided examples and practical setup notes.
+- `Playground`: a live, configurable map preview with side-by-side controls and outputs.
 
-Source file in workspace:
+## Core Features
 
-- `../data/processed/nepal-map.topojson`
+- View scope controls: set `startLevel`, `endLevel`, `startRegion`, and `skipLevels`.
+- Selection behavior: switch between `none`, `single`, and `multi`, with optional controlled IDs.
+- Policy configuration: edit `mapPolicy` JSON directly or use the visual MapPolicy Builder.
+- Appearance tuning: adjust map theme colors, stroke width, labels, and fit/fixed dimensions.
+- Callback testing: toggle hover, click, and selection handlers and inspect emitted events.
+- Debug panels: real-time meta summary and event log.
+- Code generation: produce a ready-to-copy component snippet and download it.
 
 ## Run
 
 ```bash
+npm install
 npm run dev
 ```
 
-## What to test
+## Build
 
-- Drill-down mode (`country -> province -> district -> local_unit -> ward`)
-- Select mode color toggling
-- Hover/click callback status in UI
-- Background click zoom-out behavior
+```bash
+npm run build
+```
