@@ -2,6 +2,10 @@
 
 Interactive sandbox for `nepal-map-component`. Use it here.
 
+<p align="center">
+	<img src="./playground.png" alt="Nepal Map Playground preview" />
+</p>
+
 See [Nepal Map Component](https://github.com/bidwat/nepal-map-component) for more details about the component.
 
 ## What Is In The Playground
